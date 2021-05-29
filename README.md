@@ -1,10 +1,17 @@
-# first_app
+# i-Find
 
-A new Flutter project.
+An object detection Ai app that uses tensorflow for object detection.
+This application will eventually be merged to i-Droid project, which is a whole ecosystem of apps that aims to help blind people live like normal people
+
+Imp Information: The detection right now works best within Indoors for objects that you can find in and around your living room.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### If you want to try out
+
+Clone repo and run the app using Android Studio.
+Make sure you have the latest Flutter version installed
+
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -14,3 +21,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+![App Sample](../assets/sample_file_1.jpg)
+
+![App Sample](../assets/sample_file_2.jpg)

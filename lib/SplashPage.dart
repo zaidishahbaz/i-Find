@@ -13,7 +13,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 10,
+      seconds: 5,
       navigateAfterSeconds: HomePage(),
       imageBackground: Image.asset("assets/back.jpg").image,
       loaderColor: Colors.amberAccent,
