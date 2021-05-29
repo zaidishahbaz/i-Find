@@ -1,15 +1,16 @@
 # i-Find
 
-An object detection Ai app built using flutter that uses pre trained tensorflow model for object detection.
-This application will eventually be merged to i-Droid project, which is a whole ecosystem of apps that aims to help blind people live like normal people
+An object detection Ai app built using `Flutter` that uses pre trained `Tensorflow` model for object detection.
 
-Imp Information: The detection right now works best within Indoors for objects that you can find in and around your living room.
+This application will eventually be merged to `i-Droid` project, which is a whole ecosystem of apps that aims to help blind people live like normal people
+
+Imp Info: The detection right now works best within Indoors for objects that you can find in and around your living room.
 
 ## Getting Started
 
 ### If you want to try out
 
-Clone repo and run the app using Android Studio.
+Clone repo and run the app using `Android Studio`.
 Make sure you have the latest Flutter version installed
 
 
