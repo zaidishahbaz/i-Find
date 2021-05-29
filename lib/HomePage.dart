@@ -20,8 +20,8 @@ class _HomePageState extends State<HomePage> {
 
   loadModel() async {
     await Tflite.loadModel(
-      model: "mobilenet_v1_1.0_224.tflite",
-      labels: "mobilenet_v1_1.0_224.txt",
+      model: "assets/mobilenet_v1_1.0_224.tflite",
+      labels: "assets/mobilenet_v1_1.0_224.txt",
     );
   }
 
@@ -103,34 +103,55 @@ class _HomePageState extends State<HomePage> {
             ),
             child: Column(
               children: [
-                Center(
-                  child: Container(
-                    height: 320,
-                    width: 330,
-                    child: Image.asset("assets/camera.jpg"),
-                  ),
-                ),
-                Center(
-                  child: TextButton(
-                    onPressed: (){
-                      initCamera();
-                    },
-                    child: Container(
-                      margin: EdgeInsets.only(top: 35),
-                      height: 270,
-                      width: 360,
-                      child: imgCamera == null ? Container(
-                        height: 270,
+                Stack(
+                  children: [
+                    Center(
+                      child: Container(
+                        color: Colors.black,
+                        height: 320,
                         width: 360,
-                        child: Icon(Icons.camera, color: Colors.blueAccent, size: 40,),
-                      )
-                          : AspectRatio(
-                        aspectRatio: cameraController.value.aspectRatio,
-                        child: CameraPreview(cameraController),
+                        child: Image.asset("assets/camera.jpg"),
                       ),
                     ),
-                  )
+                    Center(
+                        child: TextButton(
+                          onPressed: (){
+                            initCamera();
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(top: 35),
+                            height: 270,
+                            width: 360,
+                            child: imgCamera == null ? Container(
+                              height: 270,
+                              width: 360,
+                              child: Icon(Icons.camera, color: Colors.blueAccent, size: 40,),
+                            )
+                                : AspectRatio(
+                              aspectRatio: cameraController.value.aspectRatio,
+                              child: CameraPreview(cameraController),
+                            ),
+                          ),
+                        )
+                    ),
+                  ],
                 ),
+                Center(
+                  child: Container(
+                    margin: EdgeInsets.only(top: 55.0),
+                    child: SingleChildScrollView(
+                      child: Text(
+                        result,
+                        style: TextStyle(
+                          backgroundColor: Colors.black54,
+                          fontSize: 30.0,
+                          color: Colors.white70,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
