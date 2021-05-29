@@ -1,3 +1,4 @@
+import 'package:first_app/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -13,7 +14,7 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 10,
-      // navigateAfterSeconds: ,
+      navigateAfterSeconds: HomePage(),
       imageBackground: Image.asset("assets/back.jpg").image,
       loaderColor: Colors.amberAccent,
       loadingText: Text("shahbazzaidi15@gmail.com", style: TextStyle(color: Colors.white70),),
