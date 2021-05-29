@@ -1,6 +1,6 @@
 # i-Find
 
-An object detection Ai app built using `Flutter` that uses pre trained `Tensorflow` model for object detection.
+A realtime object detection AI app built using `Flutter` that uses pre trained `Tensorflow` model for object detection and runs `live camera stream`.
 
 This application will eventually be merged to `i-Droid` project, which is a whole ecosystem of apps that aims to help blind people live like normal people
 
