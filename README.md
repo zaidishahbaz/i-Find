@@ -23,6 +23,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 
-![App Sample](../assets/sample_file_1.jpg)
+![App Sample](../main/assets/sample_file_1.jpg)
 
-![App Sample](../assets/sample_file_2.jpg)
+![App Sample](../main/assets/sample_file_2.jpg)
